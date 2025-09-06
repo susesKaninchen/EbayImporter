@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <style>
+        body {{
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }}
+        .container {{
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }}
+        .product-title {{
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }}
+        .brand {{
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }}
+        .product-image {{
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }}
+        .description {{
+            margin-bottom: 20px;
+        }}
+        .features {{
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }}
+        .warning {{
+            font-size: 12px;
+            color: #d9534f;
+            border: 1px solid #d9534f;
+            padding: 10px;
+            border-radius: 5px;
+        }}
+        .footer {{
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+            margin-top: 20px;
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="product-title">{title}</h1>
+        <p class="brand">von {brand}</p>
+
+        <img src="{image_url}" alt="{title}" class="product-image">
+
+        <div class="description">
+            <h2>Beschreibung</h2>
+            {description_html}
+        </div>
+
+        <div class="features">
+            <h2>Eigenschaften</h2>
+            <ul>
+                {features}
+            </ul>
+        </div>
+
+        <div class="warning">
+            <p><strong>Warnung!</strong> {warning}</p>
+        </div>
+        
+        <div class="footer">
+            <p>{brand}® ist eine eingetragene Handelsmarke.</p>
+        </div>
+    </div>
+</body>
+</html>

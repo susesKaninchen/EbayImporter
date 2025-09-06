@@ -1,0 +1,21 @@
+# Bytecode
+__pycache__/
+*.pyc
+
+# Environments
+.venv/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs / artifacts
+ebay_import.csv
+ebay_import_.csv
+
+# Misc
+*.log
