@@ -38,7 +38,7 @@ Dieser Leitfaden beschreibt Zweck, Aufbau und Arbeitsabläufe des Projekts. Ziel
 
 **Konfiguration & Stellen zum Anpassen**
 - Eingabe-/Ausgabedateien: in `main.py` (`input_file`, `output_file`).
-- eBay-Kategorie: `*Category` ist aktuell fix auf `7317` gesetzt. Für produktgenaue Kategorien eine Mapping-Tabelle (z. B. CSV/JSON) einführen.
+- Kategorien-Mapping: In `category_mapping.json` pflegen. Regeln: `by_template`, `by_type_equals`, `by_tag_contains`, `by_title_contains`, `default`. Die Auflösung erfolgt in dieser Reihenfolge; `default` greift als Fallback. Kategorie-IDs bitte an den Ziel-eBay-Marktplatz anpassen.
 - Profile/Standort: `PaymentProfileName`, `ShippingProfileName`, `ReturnProfileName`, `Location` in `main.py` an die eigenen eBay-Kontodaten anpassen.
 - Template-Heuristik: Funktion `get_template_type(...)` – Keywords/Regeln an Sortiment anpassen.
 - Detail-Parsing: Funktion `parse_html_description(...)` – Regex/Labels (Material/Farbe/Lieferumfang) erweitern/robuster machen.
@@ -65,4 +65,3 @@ Dieser Leitfaden beschreibt Zweck, Aufbau und Arbeitsabläufe des Projekts. Ziel
 - Templates finalisieren und konsolidieren; Platzhalter dokumentieren.
 - Robustere Parser einführen; Validierung/Previews in den Build integrieren.
 - Optional: KI-Enrichment als separates opt-in Modul reaktivieren.
-

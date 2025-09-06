@@ -1,0 +1,20 @@
+{
+  "by_template": {
+    "wuerfelsets": "7317",
+    "wuerfel": "7317",
+    "wuerfelzubehoer": "7317"
+  },
+  "by_type_equals": {
+    "Dice Set": "7317"
+  },
+  "by_tag_contains": {
+    "set": "7317",
+    "beutel": "7317"
+  },
+  "by_title_contains": {
+    "w6": "7317",
+    "d20": "7317"
+  },
+  "default": "7317"
+}
+
