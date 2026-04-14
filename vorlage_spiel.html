@@ -1,0 +1,28 @@
+<div id="bg-shop" style="font-family: Arial, sans-serif; color: #000; font-size: 14px;">
+  <div class="body-wrapper" style="max-width: 1000px; margin: 0 auto; background: #fff; padding: 10px; box-sizing: border-box;">
+    <div class="section-info" style="display: flex; flex-direction: row; gap: 15px;">
+      <div class="image" style="flex: 1;">
+        <img src="{image_url}" alt="{title}" style="max-width: 100%; height: auto;">
+      </div>
+      <div class="text" style="flex: 1; color: #535353;">
+        <h1 style="font-size: 22px; margin: 0 0 10px 0; color: #000;">{title}</h1>
+        <p style="margin: 0 0 10px 0;"><strong>EUR {price}</strong><br><small>inkl. Mehrwertsteuer</small></p>
+        <div class="kurzbeschreibung" style="display: none;">
+          <div vocab="https://schema.org/" typeof="Product">
+            <span property="description">{short_description}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-description" style="margin-top: 15px; color: #000;">
+      <p><strong>{detailed_title}</strong></p>
+      <p>{description_line_1}</p>
+      <p>Material: {material}</p>
+      <p>Farbe: {color}</p>
+      <p>Lieferumfang: {delivery_scope}</p>
+      <p><br><strong>{brand}</strong>® ist eine eingetragene Handelsmarke und verpflichtet sich eigenverantwortlich die ethischen und ökologischen Grundsätze zur Werteerhaltung einzuhalten.</p>
+    </div>
+  </div>
+</div>
+
